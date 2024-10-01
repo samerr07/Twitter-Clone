@@ -158,7 +158,7 @@ const Tweet = ({ tweet }) => {
                         <div className="avatar">
                           <div className="w-8 rounded-full">
                             <Avatar
-                              src="https://pbs.twimg.com/profile_images/433940520427999232/xFIvGxvQ_400x400.jpeg"
+                              src={comment?.userDetail?.profileImg}
                               size="40"
                               round={true}
                             />

@@ -130,9 +130,9 @@ const Profile = () => {
         <img src={profile?.coverImg || "https://pbs.twimg.com/profile_banners/1581707412922200067/1693248932/1080x360"} 
         className='h-52 w-full object-cover'
         />
-        {/* {isMyProfile && ( */}
+       
         <div
-          className="z-10 absolute top-2 right-2 rounded-full p-2 bg-gray-800 bg-opacity-75 cursor-pointer  group-hover/cover:opacity-100 transition duration-200"
+          className="z-10 absolute top-2 right-2 rounded-full p-2 bg-white bg-opacity-75 cursor-pointer  group-hover/cover:opacity-100 transition duration-200"
           onClick={() => coverImgRef.current.click()}
         >
           <MdEdit className="w-5 h-5 text-red" />

@@ -32,7 +32,10 @@ const LeftSideBar = () => {
   }
 
   return (
-    <div className='flex flex-col justify-between h-screen p-4  md:w-64 w-20'>
+    <div 
+    // className='flex flex-col justify-between h-screen p-4  md:w-64 w-20 sticky md:top-0 md:left-0 md:z-10'
+    className='flex flex-col justify-between h-screen p-4 w-20 md:w-64 sticky top-0 z-10'
+    >
       <div className='flex flex-col items-center md:items-start'>
         <div className='mb-4'>
           <Link to={"/"}>
@@ -102,23 +105,7 @@ const LeftSideBar = () => {
         </Link>
       
 
-      {/* <div className='flex justify-around p-4 bg-gray-200 rounded-full md:hidden'>
-        <Link to={"/"} className='hover:bg-gray-300 p-2 rounded-full'>
-          <MdHomeFilled size={"28px"} />
-        </Link>
-        <Link to={"/explore"} className='hover:bg-gray-300 p-2 rounded-full'>
-          <CiSearch size={"28px"} />
-        </Link>
-        <Link to={"/notifications"} className='hover:bg-gray-300 p-2 rounded-full'>
-          <IoIosNotificationsOutline size={"28px"} />
-        </Link>
-        <Link to={"/bookmarks"} className='hover:bg-gray-300 p-2 rounded-full'>
-          <CiBookmark size={"28px"} />
-        </Link>
-        <Link to={`/profile/${user?._id}`} className='hover:bg-gray-300 p-2 rounded-full'>
-          <FaRegUser size={"28px"} />
-        </Link>
-      </div> */}
+      
     </div>
   );
 }
