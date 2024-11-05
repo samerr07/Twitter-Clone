@@ -7,11 +7,13 @@ const tweetRouter = require("./routes/tweetRoutes");
 const cors = require("cors")
 const bodyParser = require('body-parser');
 const cloudinary = require('cloudinary').v2
+const path = require("path");
 
 
 dotenv.config();
 
 const server = express();
+const _dirname = path.resolve();
 
 
 cloudinary.config({
@@ -45,9 +47,14 @@ server.use("/api/v1/user" , userRouter.router);
 server.use("/api/v1/tweet", tweetRouter.router);
 
 
-server.get("/",(req,res)=>{
-    res.json("Server Started !!")
-})
+server.use(express.static(path.join(_dirname, "/client/dist")));
+server.get('*', (_,res) => {
+    res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
+});
+
+// server.get("/",(req,res)=>{
+//     res.json("Server Started !!")
+// })
 
 
 server.listen(8080,()=>{

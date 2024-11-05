@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import LeftSideBar from './LeftSideBar'
-
 import RightSideBar from './RightSideBar'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
