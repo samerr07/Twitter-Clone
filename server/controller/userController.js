@@ -94,7 +94,7 @@ exports.loginUser = async(req,res)=>{
             userId : user._id
         }
         const token = await jwt.sign(tokenData, process.env.JWT_SECRET,{expiresIn: "1d"});
-        console.log(token)
+        
         // set the token in browser cookie
         return res.cookie("accessToken",token,{
             httpOnly:true,

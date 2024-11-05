@@ -38,7 +38,7 @@ server.use(express.json());
 // server.use(express.urlencoded({extended:true}));
 server.use(cookieParser());
 const corsOptions = {
-    origin:true,
+    origin:"https://twitter-clone-z1w1.onrender.com",
     credentials:true
 }
 server.use(cors(corsOptions))
