@@ -25,7 +25,7 @@ This project is a fully-functional Twitter clone built with the MERN (MongoDB, E
 - **Frontend:**
   - React.js
   - Tailwind CSS
-  - Zustand (for state management)
+  - Redux (for state management)
   - Axios (for API calls)
 - **Backend:**
   - Node.js
@@ -35,7 +35,7 @@ This project is a fully-functional Twitter clone built with the MERN (MongoDB, E
   - Cloudinary (for image uploads)
 - **DevOps:**
   - Git & GitHub for version control
-  - Heroku/Netlify for deployment
+  - Render for deployment
 
 ## 📸 Screenshorts
 
