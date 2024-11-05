@@ -1,6 +1,6 @@
 # 🚀 Twitter Clone - MERN Stack Social Media App
 
-## Live Demo : https://twitter-clone-z1w1.onrender.com
+## Live Demo : https://twitter-clone-z1w1.onrender.com/
 
 ![Project Preview]
 ![Screenshot (3)](https://github.com/user-attachments/assets/5979de34-7c43-4cd0-9d53-a2cf152093a9)
